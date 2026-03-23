@@ -1,16 +1,19 @@
-# React + Vite
+📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates the use of a custom React hook (useFetch) to simplify API data fetching.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Decisions:
+Created a reusable hook useFetch to avoid repeating fetch logic
+Used:
+useState → manage data, loading, error
+useEffect → trigger API call
+useCallback → optimize function re-creation
+Handled:
+Loading state
+Error handling (network/API issues)
+Built a simple UI to display product data
+Used CSS Grid for responsive layout
+Benefits:
+Cleaner code
+Reusable logic
+Better separation of concerns
